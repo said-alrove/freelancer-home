@@ -15,12 +15,12 @@ function loadPortfolio() {
                 <div class="portfolio__project">
                     <picture class="portfolio__thumbnail">
                         <source type="image/avif" srcset="
-                                                    assets/avif/${project.id.x1}.avif 640w,
-                                                    assets/avif/${project.id.x2}.avif 1280w">
+                                https://said-alrove.github.io/freelancer-home/assets/avif/${project.id.x1}.avif 640w,
+                                https://said-alrove.github.io/freelancer-home/assets/avif/${project.id.x2}.avif 1280w">
                         <source type="image/webp" srcset="
-                                                    assets/webp/${project.id.x1}.webp 640w,
-                                                    assets/webp/${project.id.x2}.webp 1280w">
-                        <img src="assets/webp/${project.id.fallback}.webp" class="portfolio__thumbnail-image" alt="Project thumbnail" loading="lazy">
+                                https://said-alrove.github.io/freelancer-home/assets/webp/${project.id.x1}.webp 640w,
+                                https://said-alrove.github.io/freelancer-home/assets/webp/${project.id.x2}.webp 1280w">
+                        <img src="https://said-alrove.github.io/freelancer-home/assets/webp/${project.id.fallback}.webp" class="portfolio__thumbnail-image" alt="Project thumbnail" loading="lazy">
                     </picture>
                     <div class="portfolio__content">
                         <header class="portfolio__cotent-header">

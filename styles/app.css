@@ -50,7 +50,7 @@ p { font-family: var(--ff-normal); }
 /* === HERO === */
 .hero {
     block-size: 100vh;
-    background-image: url('../assets/webp/hero.webp');
+    background-image: url('https://said-alrove.github.io/freelancer-home/assets/webp/hero.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -165,7 +165,7 @@ p { font-family: var(--ff-normal); }
 .footer {
     margin-block-start: 2em;
     padding: 2em;
-    background-image: url('../assets/webp/contact.webp');
+    background-image: url('https://said-alrove.github.io/freelancer-home/assets/webp/contact.webp');
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--clr-white);
