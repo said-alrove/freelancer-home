@@ -12,7 +12,7 @@
         {
             "id": {
                 "x1": "thumbnail-2@1x",
-                "x2": "thumbnail-3@2x",
+                "x2": "thumbnail-2@2x",
                 "fallback": "thumbnail-2@2x"
             },
             "name": "App",

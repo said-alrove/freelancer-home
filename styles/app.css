@@ -13,6 +13,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -76,6 +77,15 @@ p { font-family: var(--ff-normal); }
     letter-spacing: .05em;
 }
 
+.hero__icon > i {
+    margin-block: .2em;
+    font-size: 5rem;
+    color: var(--clr-white);
+    transition: all 250ms ease-in-out;
+}
+
+.hero__icon > i:hover { transform: scale(1.2); }
+
 /* === SERVICES === */
 .services {
     margin-block: 3em;
@@ -109,6 +119,11 @@ p { font-family: var(--ff-normal); }
     inline-size: 7rem;
     block-size: .5rem;
     background-color: var(--clr-orange-100);
+    transition: all 250ms ease-in-out;
+}
+
+.service__heading:hover::after {
+    width: 10rem;
 }
 
 .service__info { margin-block: .75em; }
