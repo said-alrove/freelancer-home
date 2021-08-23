@@ -20,7 +20,7 @@ function loadPortfolio() {
                         <source type="image/webp" srcset="
                                                     assets/webp/${project.id.x1}.webp 640w,
                                                     assets/webp/${project.id.x2}.webp 1280w">
-                        <img src="assets/webp/${project.id.x2}.jpg" class="portfolio__thumbnail-image" alt="" loading="lazy">
+                        <img src="assets/webp/${project.id.fallback}.webp" class="portfolio__thumbnail-image" alt="Project thumbnail" loading="lazy">
                     </picture>
                     <div class="portfolio__content">
                         <header class="portfolio__cotent-header">

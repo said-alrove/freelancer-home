@@ -1,97 +1,73 @@
 {
     "portfolio__projects" : [
         {
-            "format": {
-                "avif": "avif",
-                "webp": "webp"
-            },
             "id": {
                 "x1": "thumbnail-1@1x",
-                "x2": "thumbnail-1@2x"
+                "x2": "thumbnail-1@2x",
+                "fallback": "thumbnail-1@2x"
             },
             "name": "Website",
             "desc": "Molestias quam iure quia. Magni accusamus, itaque alias ipsa."
         },
         {
-            "format": {
-                "avif": "avif",
-                "webp": "webp"
-            },
             "id": {
                 "x1": "thumbnail-2@1x",
-                "x2": "thumbnail-3@2x"
+                "x2": "thumbnail-3@2x",
+                "fallback": "thumbnail-2@2x"
             },
             "name": "App",
             "desc": "Molestias quam iure quia. Magni accusamus, itaque alias ipsa."
         },
         {
-            "format": {
-                "avif": "avif",
-                "webp": "webp"
-            },
             "id": {
                 "x1": "thumbnail-3@1x",
-                "x2": "thumbnail-3@2x"
+                "x2": "thumbnail-3@2x",
+                "fallback": "thumbnail-3@2x"
             },
             "name": "App",
             "desc": "Molestias quam iure quia. Magni accusamus, itaque alias ipsa."
         },
         {
-            "format": {
-                "avif": "avif",
-                "webp": "webp"
-            },
             "id": {
                 "x1": "thumbnail-4@1x",
-                "x2": "thumbnail-4@2x"
+                "x2": "thumbnail-4@2x",
+                "fallback": "thumbnail-4@2x"
             },
             "name": "Web App",
             "desc": "Molestias quam iure quia. Magni accusamus, itaque alias ipsa."
         },
         {
-            "format": {
-                "avif": "avif",
-                "webp": "webp"
-            },
             "id": {
                 "x1": "thumbnail-5@1x",
-                "x2": "thumbnail-5@2x"
+                "x2": "thumbnail-5@2x",
+                "fallback": "thumbnail-5@2x"
             },
             "name": "App",
             "desc": "Molestias quam iure quia. Magni accusamus, itaque alias ipsa."
         },
         {
-            "format": {
-                "avif": "avif",
-                "webp": "webp"
-            },
             "id": {
                 "x1": "thumbnail-6@1x",
-                "x2": "thumbnail-6@2x"
+                "x2": "thumbnail-6@2x",
+                "fallback": "thumbnail-6@2x"
             },
             "name": "App",
             "desc": "Molestias quam iure quia. Magni accusamus, itaque alias ipsa."
         },
         {
-            "format": {
-                "avif": "avif",
-                "webp": "webp"
-            },
             "id": {
                 "x1": "thumbnail-7@1x",
-                "x2": "thumbnail-7@2x"
+                "x2": "thumbnail-7@2x",
+                "fallback": "thumbnail-7@2x"
             },
             "name": "App",
             "desc": "Molestias quam iure quia. Magni accusamus, itaque alias ipsa."
         },
         {
-            "format": {
-                "avif": "avif",
-                "webp": "webp"
-            },
             "id": {
                 "x1": "thumbnail-8@1x",
-                "x2": "thumbnail-8@2x"
+                "x2": "thumbnail-8@2x",
+                "fallback": "thumbnail-8@2x"
             },
             "name": "App",
             "desc": "Molestias quam iure quia. Magni accusamus, itaque alias ipsa."
