@@ -7,11 +7,10 @@
     /* === FONTS === */
     --ff-main: 'Oswald', sans-serif;
     --ff-normal: 'Gothic A1', sans-serif;
+    --ff-spacing: .02em;
     /* === VIEWPORT === */
     --vw-sm: 1vw;
-    --vw-md: 2.5vw;
     --vw-lg: 5vw;
-    --vw-xl: 10vw;
 }
 
 /* === GLOBALS === */
@@ -68,7 +67,7 @@ p { font-family: var(--ff-normal); }
     gap: 
         clamp(.25rem, var(--vw-sm), .5rem); 
     padding-inline: 
-        clamp(.5rem, var(--vw-md), 1rem);
+        clamp(.5rem, var(--vw-sm), 1rem);
     min-inline-size: 100vw;
     min-block-size: 100vh;
     text-align: center;
@@ -79,21 +78,21 @@ p { font-family: var(--ff-normal); }
 .hero__heading {
     font-family: var(--ff-main);
     font-size: 
-        clamp(3.6rem, var(--vw-md), 4.8rem); 
-    letter-spacing: .02em;
+        clamp(3.6rem, var(--vw-lg), 4.8rem); 
+    letter-spacing: var(--ff-spacing);
 }
 
 .hero__text { 
     font-size: 
-        clamp(2.1rem, var(--vw-md), 2.8rem); 
+        clamp(2.1rem, var(--vw-lg), 2.8rem); 
     line-height: 1.75em;
-    letter-spacing: .02em;
+    letter-spacing: var(--ff-spacing);
 }
 
 .hero__icon > i {
     margin-block: .2em;
     font-size: 
-        clamp(4.5rem, var(--vw-xl), 6rem);
+        clamp(4.5rem, var(--vw-lg), 6rem);
     color: var(--clr-white);
     transition: all 250ms ease-in-out;
 }
@@ -114,14 +113,14 @@ p { font-family: var(--ff-normal); }
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         gap:   
-            clamp(2.25rem, var(--vw-md), 3rem);
+            clamp(2.25rem, var(--vw-lg), 3rem);
     }
 }
 
 .service__header > i {
     margin-block: .2em;
     font-size: 
-        clamp(3rem, var(--vw-md), 4rem);
+        clamp(3rem, var(--vw-lg), 4rem);
     color: var(--clr-blue-100);
     transition: all 300ms ease-in-out;
 }
@@ -158,7 +157,7 @@ p { font-family: var(--ff-normal); }
 .service__text {
     margin-block: .75em;
     font-size: 
-        clamp(1.5rem, var(--vw-md), 2rem);
+        clamp(1.8rem, var(--vw-sm), 2.4rem);
 }
 
 /* === PORTFOLIO === */
@@ -208,23 +207,24 @@ p { font-family: var(--ff-normal); }
 
 .portfolio__heading { 
     font-size:
-        clamp(3rem, var(--vw-md), 4rem); 
+        clamp(3rem, var(--vw-lg), 4rem); 
 }
 
 .portfolio__content-heading { 
     font-size: 
-        clamp(2.7rem, var(--vw-md), 3.6rem); 
+        clamp(2.7rem, var(--vw-lg), 3.6rem); 
 }
 
 .portfolio__content-info {
     font-size: 
-        clamp(1.5rem, var(--vw-md), 2rem);
+        clamp(1.5rem, var(--vw-lg), 2rem);
 }
 
 /* === FOOTER === */
 .footer {
     margin-block-start: 2em;
-    padding: 2em;
+    padding-block: 
+        clamp(1rem, var(--vw-lg), 2rem);
     background-image: url('https://said-alrove.github.io/freelancer-home/assets/webp/contact.webp');
     background-repeat: no-repeat;
     background-size: cover;
@@ -242,7 +242,7 @@ p { font-family: var(--ff-normal); }
     margin-block: .4em; 
     font-family: var(--ff-main);
     font-size: 
-        clamp(2.4rem, var(--vw-md), 3.2rem);
+        clamp(2.4rem, var(--vw-lg), 3.2rem);
 }
 
 .footer__list { font-family: var(--ff-normal); }
