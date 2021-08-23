@@ -64,8 +64,7 @@ p { font-family: var(--ff-normal); }
 .hero__content {
     display: grid;
     place-content: center;
-    gap: 
-        clamp(.25rem, var(--vw-sm), .5rem); 
+    gap: .25em; 
     padding-inline: 
         clamp(.5rem, var(--vw-sm), 1rem);
     min-inline-size: 100vw;
