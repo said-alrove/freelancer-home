@@ -78,7 +78,7 @@ p { font-family: var(--ff-normal); }
 
 /* === SERVICES === */
 .services {
-    margin-block: 4.8rem;
+    margin-block: 3em;
     text-align: center;
 }
 
@@ -86,7 +86,7 @@ p { font-family: var(--ff-normal); }
     .services {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        gap: 4.8rem;
+        gap: 3em;
     }
 }
 
@@ -115,8 +115,8 @@ p { font-family: var(--ff-normal); }
 
 /* === PORTFOLIO === */
 .portfolio__project {
-    margin-block-end: 4.8rem;
-    border-block-end: .1rem solid #3B5B5B;
+    margin-block-end: 3em;
+    border-block-end: .1em solid #3B5B5B;
 }
 
 .portfolio__project:last-of-type {
@@ -135,6 +135,16 @@ p { font-family: var(--ff-normal); }
 
     .portfolio__project:nth-child(3) { grid-row-end: span 2; }
 }
+
+.portfolio__heading,
+.portfolio__content-heading { 
+    margin-block: .3em;
+    font-family: var(--ff-main); 
+}
+
+.portfolio__heading { font-size: 4rem; }
+
+.portfolio__content-heading { font-size: 3.6rem; }
 
 /* === FOOTER === */
 .footer {
