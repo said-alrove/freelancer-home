@@ -7,6 +7,11 @@
     /* === FONTS === */
     --ff-main: 'Oswald', sans-serif;
     --ff-normal: 'Gothic A1', sans-serif;
+    /* === VIEWPORT === */
+    --vw-sm: 1vw;
+    --vw-md: 2.5vw;
+    --vw-lg: 5vw;
+    --vw-xl: 10vw;
 }
 
 /* === GLOBALS === */
@@ -14,6 +19,7 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-padding-block: 1em;
 }
 
 body {
@@ -49,7 +55,7 @@ p { font-family: var(--ff-normal); }
 
 /* === HERO === */
 .hero {
-    block-size: 100vh;
+    min-block-size: 100vh;
     background-image: url('https://said-alrove.github.io/freelancer-home/assets/webp/hero.webp');
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,78 +65,107 @@ p { font-family: var(--ff-normal); }
 .hero__content {
     display: grid;
     place-content: center;
+    gap: 
+        clamp(.25rem, var(--vw-sm), .5rem); 
+    padding-inline: 
+        clamp(.5rem, var(--vw-md), 1rem);
     min-inline-size: 100vw;
-    block-size: 100vh;
+    min-block-size: 100vh;
     text-align: center;
     background-color: rgb(0 0 0 / .6);
     color: var(--clr-white);
 }
 
-.hero__heading { 
+.hero__heading {
     font-family: var(--ff-main);
-    font-size: 4.4rem; 
+    font-size: 
+        clamp(3.6rem, var(--vw-md), 4.8rem); 
+    letter-spacing: .02em;
 }
 
 .hero__text { 
-    font-size: 2.4rem; 
-    line-height: 2em;
-    letter-spacing: .05em;
+    font-size: 
+        clamp(2.1rem, var(--vw-md), 2.8rem); 
+    line-height: 1.75em;
+    letter-spacing: .02em;
 }
 
 .hero__icon > i {
     margin-block: .2em;
-    font-size: 5rem;
+    font-size: 
+        clamp(4.5rem, var(--vw-xl), 6rem);
     color: var(--clr-white);
     transition: all 250ms ease-in-out;
 }
 
-.hero__icon > i:hover { transform: scale(1.2); }
+@media (min-width: 1212px) {
+    .hero__icon > i:hover { transform: scale(1.2); }
+}
 
 /* === SERVICES === */
 .services {
-    margin-block: 3em;
+    margin-block: 
+        clamp(3rem, var(--vw-lg), 4rem);
     text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 848px) {
     .services {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        gap: 3em;
+        gap:   
+            clamp(2.25rem, var(--vw-md), 3rem);
     }
 }
 
 .service__header > i {
     margin-block: .2em;
-    font-size: 3rem;
+    font-size: 
+        clamp(3rem, var(--vw-md), 4rem);
     color: var(--clr-blue-100);
+    transition: all 300ms ease-in-out;
+}
+
+@media (min-width: 1212px) {
+    .service__header > i:hover {
+        transform: rotate(360deg);
+    }
 }
 
 .service__heading {
     padding-block-end: .15em;
     font-family: var(--ff-main);
-    font-size: 4rem;
+    font-size: 
+        clamp(3rem, var(--vw-lg), 4rem);
 }
 
 .service__heading::after {
     content: '';
     display: block;
     margin: .25em auto;
-    inline-size: 7rem;
+    inline-size: 3em;
     block-size: .5rem;
     background-color: var(--clr-orange-100);
     transition: all 250ms ease-in-out;
 }
 
-.service__heading:hover::after {
-    width: 10rem;
+@media (min-width: 1212px) {
+    .service__heading:hover::after {
+        inline-size: 5em;
+    }
 }
 
-.service__info { margin-block: .75em; }
+.service__text {
+    margin-block: .75em;
+    font-size: 
+        clamp(1.5rem, var(--vw-md), 2rem);
+}
 
 /* === PORTFOLIO === */
 .portfolio__project {
-    margin-block-end: 3em;
+    margin-block-end: 2em;
+    padding-block-end: 
+        clamp(.5em, var(--vw-lg), 1.5em);
     border-block-end: .1em solid #3B5B5B;
 }
 
@@ -143,12 +178,26 @@ p { font-family: var(--ff-normal); }
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: max-content;
-        gap: 1.6rem;
+        gap: 1.5em;
     }
 
-    .portfolio__project { border-block-end: none; }
+    .portfolio__project { 
+        padding-block-end: unset;
+        border-block-end: none; 
+    }
 
     .portfolio__project:nth-child(3) { grid-row-end: span 2; }
+}
+
+@media (min-width: 1212px) {
+    .portfolio__thumbnail-image {
+        cursor: pointer;
+        transition: all 150ms ease-in-out;
+    }
+    
+    .portfolio__thumbnail-image:hover {
+        transform: scale(1.05);
+    }
 }
 
 .portfolio__heading,
@@ -157,9 +206,20 @@ p { font-family: var(--ff-normal); }
     font-family: var(--ff-main); 
 }
 
-.portfolio__heading { font-size: 4rem; }
+.portfolio__heading { 
+    font-size:
+        clamp(3rem, var(--vw-md), 4rem); 
+}
 
-.portfolio__content-heading { font-size: 3.6rem; }
+.portfolio__content-heading { 
+    font-size: 
+        clamp(2.7rem, var(--vw-md), 3.6rem); 
+}
+
+.portfolio__content-info {
+    font-size: 
+        clamp(1.5rem, var(--vw-md), 2rem);
+}
 
 /* === FOOTER === */
 .footer {
@@ -181,9 +241,16 @@ p { font-family: var(--ff-normal); }
 .footer__heading { 
     margin-block: .4em; 
     font-family: var(--ff-main);
-    font-size: 3.2rem;
+    font-size: 
+        clamp(2.4rem, var(--vw-md), 3.2rem);
 }
 
 .footer__list { font-family: var(--ff-normal); }
 
 .footer__list-item { margin-block: .4em; }
+
+.footer__list-item,
+.footer__text {
+    font-size: 
+        clamp(1.2rem, var(--vw-lg), 1.8rem);
+}
