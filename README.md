@@ -1,4 +1,4 @@
-# [freelancer-home](https://freelancer-home-392892.netlify.app/)
+# [freelancer-home](https://freelancer-home-6e057d.netlify.app/)
 This is the third project from Juan Pablo's course of [CSS Grid and Flexbox](https://www.udemy.com/course/css-grid-y-flexbox-la-guia-definitiva-crea-10-proyectos/).
 
 > **Note:** Recently I've started to deploy my sites on [Netlify](https://app.netlify.com/), therefore I changed the domain's link to the new one (in the HTML and the README files), but I kept the screenshots that held the old domain (there's no reason for changing it, the result would've been the same with a different link only).
